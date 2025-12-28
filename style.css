@@ -22,7 +22,7 @@ body {
   color: #e5e7eb;
 
   /* 👇 บังคับใช้ฟอนต์ pixel */
-  font-family: "PixelFont", "Kanit", system-ui, sans-serif;
+  font-family: "PixelFont";
 
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@ body {
    TEXT
 =============================== */
 h1 {
-  font-size: 32px;
+  font-size: 64px;
   margin-bottom: 16px;
 }
 
