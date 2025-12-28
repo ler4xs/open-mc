@@ -5,7 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Join Countdown 2026 | MCTH</title>
 
+<!-- ================= GOOGLE FONT ================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
+/* ================= CUSTOM FONT (LOCAL) =================
+   👉 ถ้าไม่ใช้ ลบทิ้งได้
+   👉 วางไฟล์ไว้ที่ /fonts/
+======================================================= */
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("fonts/MinecraftTen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================= THEME ================= */
 :root {
   --bg1: #020617;
   --bg2: #0f172a;
@@ -17,6 +34,7 @@
   box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
   margin: 0;
   height: 100vh;
@@ -24,11 +42,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: system-ui, -apple-system, sans-serif;
   color: white;
+
+  /* 👉 เปลี่ยนฟอนต์ตรงนี้ */
+  font-family: "Kanit", system-ui, -apple-system, sans-serif;
 }
 
-/* กล่องหลัก */
+/* ================= CONTAINER ================= */
 .container {
   background: linear-gradient(180deg, var(--bg2), #020617);
   padding: 48px 36px;
@@ -41,20 +61,25 @@ body {
   width: 92%;
 }
 
-/* หัวข้อ */
+/* ================= TITLE ================= */
 h1 {
   margin: 0 0 12px;
   font-size: 32px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  font-weight: 800;
+
+  /* 👉 ถ้าอยากใช้ฟอนต์ Minecraft */
+  /* font-family: "MinecraftTen", "Kanit", sans-serif; */
 }
 
+/* ================= TEXT ================= */
 p {
   margin: 0 0 36px;
   opacity: .85;
   line-height: 1.6;
 }
 
-/* ปุ่มเปิดเกม */
+/* ================= BUTTON ================= */
 .open-btn {
   display: block;
   padding: 26px 20px;
@@ -70,7 +95,6 @@ p {
   transition: all .18s ease;
 }
 
-/* เอฟเฟกต์ hover */
 .open-btn:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow:
@@ -78,12 +102,11 @@ p {
     0 28px 60px rgba(0,0,0,.8);
 }
 
-/* ตอนกด */
 .open-btn:active {
   transform: scale(.97);
 }
 
-/* ข้อความเล็ก */
+/* ================= FOOT NOTE ================= */
 .small {
   margin-top: 24px;
   font-size: 14px;
@@ -96,6 +119,7 @@ p {
 
 <div class="container">
   <h1>🎮 นับถอยหลังปีใหม่ 2026</h1>
+
   <p>
     กดปุ่มด้านล่างเพื่อ<br>
     เพิ่มเซิร์ฟเวอร์ <b>MCTH</b> และเข้าเล่นทันที<br>
@@ -111,16 +135,10 @@ p {
   </a>
 
   <div class="small">
-    รองรับมือถือ • Windows / Android ( ไม่รองรับ iOS )<br>
-    หากใช้อุปกรณ์ iOS กรุณาเพิ่ม Server ด้วยตัวเอง
+    รองรับ Windows / Android<br>
+    iOS ต้องเพิ่ม Server ด้วยตนเอง
   </div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
